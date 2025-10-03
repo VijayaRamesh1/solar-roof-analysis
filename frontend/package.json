@@ -1,0 +1,44 @@
+{
+  "name": "solar-roof-frontend",
+  "version": "1.0.0",
+  "description": "Project SolisCAN - Interactive Solar Potential Analyzer Frontend",
+  "private": true,
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "framer-motion": "^10.18.0",
+    "fuse.js": "^6.6.2",
+    "lucide-react": "^0.294.0",
+    "mapbox-gl": "^2.15.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "three": "^0.158.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "react-scripts start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:5001"
+}

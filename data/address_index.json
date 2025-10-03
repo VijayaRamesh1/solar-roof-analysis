@@ -1,0 +1,502 @@
+[
+  {
+    "id": "building_0",
+    "address": "110 Rue Notre-Dame Ouest, Montr\u00e9al, QC",
+    "solar_score": 75.0
+  },
+  {
+    "id": "building_1",
+    "address": "3299 Rue Crescent, Montreal, QC",
+    "solar_score": 95.0
+  },
+  {
+    "id": "building_2",
+    "address": "700 Rue de La Gaucheti\u00e8re Ouest, Montreal, QC",
+    "solar_score": 79.0
+  },
+  {
+    "id": "building_3",
+    "address": "600 Rue de La Gaucheti\u00e8re Ouest, Montr\u00e9al, QC",
+    "solar_score": 90.0
+  },
+  {
+    "id": "building_4",
+    "address": "7853 Rue Sherbrooke, Montreal, QC",
+    "solar_score": 87.0
+  },
+  {
+    "id": "building_5",
+    "address": "8127 Avenue McGill College, Montreal, QC",
+    "solar_score": 67.0
+  },
+  {
+    "id": "building_6",
+    "address": "705 rue Sainte-Catherine Ouest, Montreal, QC",
+    "solar_score": 90.0
+  },
+  {
+    "id": "building_7",
+    "address": "2794 Avenue du Mont-Royal, Montreal, QC",
+    "solar_score": 93.0
+  },
+  {
+    "id": "building_8",
+    "address": "9308 Avenue McGill College, Montreal, QC",
+    "solar_score": 99.0
+  },
+  {
+    "id": "building_9",
+    "address": "5388 Rue Crescent, Montreal, QC",
+    "solar_score": 96.0
+  },
+  {
+    "id": "building_10",
+    "address": "1 Place Ville-Marie, Montreal, QC",
+    "solar_score": 72.0
+  },
+  {
+    "id": "building_11",
+    "address": "5271 Avenue McGill College, Montreal, QC",
+    "solar_score": 79.0
+  },
+  {
+    "id": "building_12",
+    "address": "1971 Rue Crescent, Montreal, QC",
+    "solar_score": 87.0
+  },
+  {
+    "id": "building_13",
+    "address": "9657 Avenue du Parc, Montreal, QC",
+    "solar_score": 83.0
+  },
+  {
+    "id": "building_14",
+    "address": "1224 Avenue McGill College, Montreal, QC",
+    "solar_score": 81.0
+  },
+  {
+    "id": "building_15",
+    "address": "3430 Rue Peel, Montreal, QC",
+    "solar_score": 85.0
+  },
+  {
+    "id": "building_16",
+    "address": "1155 Boulevard Ren\u00e9-L\u00e9vesque Ouest, Montreal, QC",
+    "solar_score": 90.0
+  },
+  {
+    "id": "building_17",
+    "address": "1177 Rue Sainte-Catherine, Montreal, QC",
+    "solar_score": 94.0
+  },
+  {
+    "id": "building_18",
+    "address": "5707 Rue Sainte-Catherine, Montreal, QC",
+    "solar_score": 96.0
+  },
+  {
+    "id": "building_19",
+    "address": "1460 rue Mansfield, Montreal, QC",
+    "solar_score": 75.0
+  },
+  {
+    "id": "building_20",
+    "address": "8087 Rue Peel, Montreal, QC",
+    "solar_score": 96.0
+  },
+  {
+    "id": "building_21",
+    "address": "6008 Rue Sainte-Catherine, Montreal, QC",
+    "solar_score": 73.0
+  },
+  {
+    "id": "building_22",
+    "address": "5163 Avenue du Parc, Montreal, QC",
+    "solar_score": 78.0
+  },
+  {
+    "id": "building_23",
+    "address": "805 rue Sherbrooke Ouest, Montr\u00e9al, QC",
+    "solar_score": 72.0
+  },
+  {
+    "id": "building_24",
+    "address": "801 Rue Sherbrooke Ouest, Montr\u00e9al, QC",
+    "solar_score": 95.0
+  },
+  {
+    "id": "building_25",
+    "address": "3420 Rue University, Montr\u00e9al, QC",
+    "solar_score": 74.0
+  },
+  {
+    "id": "building_26",
+    "address": "1 Rue Notre-Dame Est, Montreal, QC",
+    "solar_score": 86.0
+  },
+  {
+    "id": "building_27",
+    "address": "155 Rue Notre-Dame Est, Montr\u00e9al, QC",
+    "solar_score": 81.0
+  },
+  {
+    "id": "building_28",
+    "address": "85 Rue Notre-Dame Est, Montreal, QC",
+    "solar_score": 96.0
+  },
+  {
+    "id": "building_29",
+    "address": "7214 Boulevard Saint-Joseph, Montreal, QC",
+    "solar_score": 88.0
+  },
+  {
+    "id": "building_30",
+    "address": "201 Avenue du Pr\u00e9sident-Kennedy, Montr\u00e9al, QC",
+    "solar_score": 93.0
+  },
+  {
+    "id": "building_31",
+    "address": "2499 Avenue du Mont-Royal, Montreal, QC",
+    "solar_score": 77.0
+  },
+  {
+    "id": "building_32",
+    "address": "7119 Rue Peel, Montreal, QC",
+    "solar_score": 94.0
+  },
+  {
+    "id": "building_33",
+    "address": "900 Boulevard Ren\u00e9-L\u00e9vesque Ouest, Montr\u00e9al, QC",
+    "solar_score": 67.0
+  },
+  {
+    "id": "building_34",
+    "address": "2153 Rue Saint-Denis, Montreal, QC",
+    "solar_score": 99.0
+  },
+  {
+    "id": "building_35",
+    "address": "1050 Rue de La Gaucheti\u00e8re Ouest, Montr\u00e9al, QC",
+    "solar_score": 83.0
+  },
+  {
+    "id": "building_36",
+    "address": "2403 Rue Peel, Montreal, QC",
+    "solar_score": 86.0
+  },
+  {
+    "id": "building_37",
+    "address": "2824 Rue Sherbrooke, Montreal, QC",
+    "solar_score": 78.0
+  },
+  {
+    "id": "building_38",
+    "address": "3709 Rue Saint-Denis, Montreal, QC",
+    "solar_score": 83.0
+  },
+  {
+    "id": "building_39",
+    "address": "7000 Boulevard Ren\u00e9-L\u00e9vesque, Montreal, QC",
+    "solar_score": 94.0
+  },
+  {
+    "id": "building_40",
+    "address": "608 Rue Sainte-Catherine, Montreal, QC",
+    "solar_score": 91.0
+  },
+  {
+    "id": "building_41",
+    "address": "372 Rue Sainte-Catherine Ouest, Montr\u00e9al, QC",
+    "solar_score": 79.0
+  },
+  {
+    "id": "building_42",
+    "address": "2026 Rue Saint-Laurent, Montreal, QC",
+    "solar_score": 67.0
+  },
+  {
+    "id": "building_43",
+    "address": "1290 Rue Sainte-Catherine, Montreal, QC",
+    "solar_score": 80.0
+  },
+  {
+    "id": "building_44",
+    "address": "3463 Rue Peel, Montreal, QC",
+    "solar_score": 81.0
+  },
+  {
+    "id": "building_45",
+    "address": "6503 Rue Sherbrooke, Montreal, QC",
+    "solar_score": 71.0
+  },
+  {
+    "id": "building_46",
+    "address": "475 Boulevard De Maisonneuve Est, Montr\u00e9al, QC",
+    "solar_score": 74.0
+  },
+  {
+    "id": "building_47",
+    "address": "777 Boulevard Robert-Bourassa, Montr\u00e9al, QC",
+    "solar_score": 75.0
+  },
+  {
+    "id": "building_48",
+    "address": "3959 Rue Crescent, Montreal, QC",
+    "solar_score": 78.0
+  },
+  {
+    "id": "building_49",
+    "address": "1111 Rue Notre-Dame Ouest, Montr\u00e9al, QC",
+    "solar_score": 95.0
+  },
+  {
+    "id": "building_50",
+    "address": "1100 Rue Notre-Dame Ouest, Montr\u00e9al, QC",
+    "solar_score": 88.0
+  },
+  {
+    "id": "building_51",
+    "address": "9688 Rue Saint-Denis, Montreal, QC",
+    "solar_score": 84.0
+  },
+  {
+    "id": "building_52",
+    "address": "1290 Avenue des Canadiens-de-Montr\u00e9al, Montr\u00e9al, QC",
+    "solar_score": 74.0
+  },
+  {
+    "id": "building_53",
+    "address": "980 Boulevard de Maisonneuve Ouest, Montreal, QC",
+    "solar_score": 87.0
+  },
+  {
+    "id": "building_54",
+    "address": "6903 Rue Peel, Montreal, QC",
+    "solar_score": 92.0
+  },
+  {
+    "id": "building_55",
+    "address": "696 Rue Saint-Denis, Montreal, QC",
+    "solar_score": 92.0
+  },
+  {
+    "id": "building_56",
+    "address": "7258 Rue Sherbrooke, Montreal, QC",
+    "solar_score": 97.0
+  },
+  {
+    "id": "building_57",
+    "address": "1194 Rue Crescent, Montreal, QC",
+    "solar_score": 87.0
+  },
+  {
+    "id": "building_58",
+    "address": "5968 Rue Peel, Montreal, QC",
+    "solar_score": 46.0
+  },
+  {
+    "id": "building_59",
+    "address": "1091 Avenue McGill College, Montreal, QC",
+    "solar_score": 90.0
+  },
+  {
+    "id": "building_60",
+    "address": "6350 Avenue du Parc, Montreal, QC",
+    "solar_score": 94.0
+  },
+  {
+    "id": "building_61",
+    "address": "797 Rue Sherbrooke, Montreal, QC",
+    "solar_score": 66.0
+  },
+  {
+    "id": "building_62",
+    "address": "1201 Boulevard Ren\u00e9-L\u00e9vesque Ouest, Montr\u00e9al, QC",
+    "solar_score": 92.0
+  },
+  {
+    "id": "building_63",
+    "address": "1200 Rue Stanley, Montr\u00e9al, QC",
+    "solar_score": 89.0
+  },
+  {
+    "id": "building_64",
+    "address": "2101 Avenue Jeanne-Mance, Montreal, QC",
+    "solar_score": 78.0
+  },
+  {
+    "id": "building_65",
+    "address": "145 Avenue du Pr\u00e9sident-Kennedy, Montr\u00e9al, QC",
+    "solar_score": 94.0
+  },
+  {
+    "id": "building_66",
+    "address": "175 Avenue du President Kennedy, Montr\u00e9al, QC",
+    "solar_score": 90.0
+  },
+  {
+    "id": "building_67",
+    "address": "250 Rue Ontario Est, Montr\u00e9al, QC",
+    "solar_score": 77.0
+  },
+  {
+    "id": "building_68",
+    "address": "5339 Rue Saint-Laurent, Montreal, QC",
+    "solar_score": 86.0
+  },
+  {
+    "id": "building_69",
+    "address": "1464 Boulevard Ren\u00e9-L\u00e9vesque, Montreal, QC",
+    "solar_score": 72.0
+  },
+  {
+    "id": "building_70",
+    "address": "2387 Rue Sherbrooke, Montreal, QC",
+    "solar_score": 76.0
+  },
+  {
+    "id": "building_71",
+    "address": "235 Boulevard de Maisonneuve Est, Montr\u00e9al, QC",
+    "solar_score": 63.0
+  },
+  {
+    "id": "building_72",
+    "address": "245 Boulevard de Maisonneuve Est, Montr\u00e9al, QC",
+    "solar_score": 80.0
+  },
+  {
+    "id": "building_73",
+    "address": "255 Boulevard de Maisonneuve Est, Montr\u00e9al, QC",
+    "solar_score": 88.0
+  },
+  {
+    "id": "building_74",
+    "address": "8490 Avenue McGill College, Montreal, QC",
+    "solar_score": 47.0
+  },
+  {
+    "id": "building_75",
+    "address": "462 Rue Saint-Laurent, Montreal, QC",
+    "solar_score": 58.0
+  },
+  {
+    "id": "building_76",
+    "address": "4022 Rue Saint-Denis, Montreal, QC",
+    "solar_score": 67.0
+  },
+  {
+    "id": "building_77",
+    "address": "662 Rue Saint-Denis, Montreal, QC",
+    "solar_score": 93.0
+  },
+  {
+    "id": "building_78",
+    "address": "200 Rue Ontario Est, Montr\u00e9al, QC",
+    "solar_score": 88.0
+  },
+  {
+    "id": "building_79",
+    "address": "100 Rue Ontario Est, Montr\u00e9al, QC",
+    "solar_score": 82.0
+  },
+  {
+    "id": "building_80",
+    "address": "100 Boulevard De Maisonneuve Est, Montreal, QC",
+    "solar_score": 89.0
+  },
+  {
+    "id": "building_81",
+    "address": "259 Boulevard de Maisonneuve Est, Montr\u00e9al, QC",
+    "solar_score": 48.0
+  },
+  {
+    "id": "building_82",
+    "address": "3454 Rue Saint-Denis, Montreal, QC",
+    "solar_score": 86.0
+  },
+  {
+    "id": "building_83",
+    "address": "7865 Boulevard Saint-Joseph, Montreal, QC",
+    "solar_score": 66.0
+  },
+  {
+    "id": "building_84",
+    "address": "123 Boulevard de Maisonneuve Est, Montr\u00e9al, QC",
+    "solar_score": 83.0
+  },
+  {
+    "id": "building_85",
+    "address": "133 Boulevard de Maisonneuve Est, Montr\u00e9al, QC",
+    "solar_score": 66.0
+  },
+  {
+    "id": "building_86",
+    "address": "143 Boulevard de Maisonneuve Est, Montr\u00e9al, QC",
+    "solar_score": 86.0
+  },
+  {
+    "id": "building_87",
+    "address": "1685 Rue Saint-Dominique, Montr\u00e9al, QC",
+    "solar_score": 50.0
+  },
+  {
+    "id": "building_88",
+    "address": "1675 Rue Saint-Dominique, Montr\u00e9al, QC",
+    "solar_score": 58.0
+  },
+  {
+    "id": "building_89",
+    "address": "1695 Rue Saint-Dominique, Montr\u00e9al, QC",
+    "solar_score": 70.0
+  },
+  {
+    "id": "building_90",
+    "address": "9533 Avenue du Mont-Royal, Montreal, QC",
+    "solar_score": 71.0
+  },
+  {
+    "id": "building_91",
+    "address": "3504 Rue Sherbrooke, Montreal, QC",
+    "solar_score": 66.0
+  },
+  {
+    "id": "building_92",
+    "address": "8971 Rue Saint-Denis, Montreal, QC",
+    "solar_score": 50.0
+  },
+  {
+    "id": "building_93",
+    "address": "1525 Rue Saint-Dominique, Montreal, QC",
+    "solar_score": 75.0
+  },
+  {
+    "id": "building_94",
+    "address": "1545 Rue Saint-Dominique, Montreal, QC",
+    "solar_score": 69.0
+  },
+  {
+    "id": "building_95",
+    "address": "1535 Rue Saint-Dominique, Montreal, QC",
+    "solar_score": 71.0
+  },
+  {
+    "id": "building_96",
+    "address": "4982 Avenue du Parc, Montreal, QC",
+    "solar_score": 72.0
+  },
+  {
+    "id": "building_97",
+    "address": "6680 Avenue du Mont-Royal, Montreal, QC",
+    "solar_score": 91.0
+  },
+  {
+    "id": "building_98",
+    "address": "6360 Rue Saint-Denis, Montreal, QC",
+    "solar_score": 76.0
+  },
+  {
+    "id": "building_99",
+    "address": "7651 Boulevard Ren\u00e9-L\u00e9vesque, Montreal, QC",
+    "solar_score": 77.0
+  }
+]

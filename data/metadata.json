@@ -1,0 +1,10 @@
+{
+  "total_buildings": 100,
+  "data_source": "OpenStreetMap (Real building footprints)",
+  "last_updated": "2024-09-30T00:00:00",
+  "coverage_area": "Montreal, QC (Downtown area)",
+  "solar_score_range": {
+    "min": 46.0,
+    "max": 99.0
+  }
+}
