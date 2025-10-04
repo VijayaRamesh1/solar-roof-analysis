@@ -5,14 +5,15 @@ import AnalysisPanel from './components/AnalysisPanel';
 import ThemeToggle from './components/ThemeToggle';
 import MapLegend from './components/MapLegend';
 import LoadingSpinner from './components/LoadingSpinner';
-import TelemetrySDK from './telemetry/TelemetrySDK.v2';
 import { MapPin, Sun, Zap, Sparkles, Home } from 'lucide-react';
+import TelemetrySDK from './telemetry/TelemetrySDK.v2';
 import './App.css';
 
-// Create SDK instance (outside component, singleton)
+// Initialize Telemetry SDK (singleton pattern - only once per app lifetime)
 const telemetrySDK = new TelemetrySDK({
   apiUrl: 'http://localhost:8080',
-  debug: true,
+  debug: true, // Set to false in production
+  consentRequired: false, // Set to true if GDPR compliance needed
 });
 
 function App() {
@@ -22,6 +23,19 @@ function App() {
   const [error, setError] = useState(null);
   const [theme, setTheme] = useState('dark');
   const map3DRef = useRef(null);
+
+  // Initialize Telemetry SDK
+  useEffect(() => {
+    console.log('[App] Initializing DRS Telemetry SDK...');
+    telemetrySDK.initialize();
+    console.log('[App] Session Token:', telemetrySDK.getSessionToken());
+
+    // Cleanup on unmount
+    return () => {
+      console.log('[App] Shutting down Telemetry SDK...');
+      telemetrySDK.shutdown();
+    };
+  }, []);
 
   // Load theme preference from localStorage
   useEffect(() => {
@@ -35,7 +49,17 @@ function App() {
     const loadBuildings = async () => {
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:5001/api/buildings');
+        
+        // Get session token for DRS
+        const sessionToken = telemetrySDK.getSessionToken();
+        
+        const response = await fetch('http://localhost:5001/api/buildings', {
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Session-Token': sessionToken || '', // Attach session token
+          },
+        });
+        
         if (!response.ok) {
           throw new Error('Failed to load building data');
         }
@@ -53,17 +77,6 @@ function App() {
     loadBuildings();
   }, []);
 
-  // Initialize telemetry on any view
-  useEffect(() => {
-    // Initialize telemetry on any view
-    telemetrySDK.initialize();
-    
-    // Cleanup on unmount
-    return () => {
-      telemetrySDK.shutdown();
-    };
-  }, []);
-
   const handleThemeToggle = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
@@ -71,9 +84,39 @@ function App() {
     document.documentElement.setAttribute('data-theme', newTheme);
   };
 
-  const handleBuildingSelect = (building) => {
+  const handleBuildingSelect = async (building) => {
     setSelectedBuilding(building);
     console.log('Building selected:', building);
+    
+    // If building has an ID, fetch full details with DRS protection
+    if (building?.properties?.id) {
+      try {
+        const sessionToken = telemetrySDK.getSessionToken();
+        
+        const response = await fetch(`http://localhost:5001/api/buildings/${building.properties.id}`, {
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Session-Token': sessionToken || '',
+          },
+        });
+
+        if (response.status === 403) {
+          // DRS blocked the request
+          const errorData = await response.json();
+          alert(`Access denied: ${errorData.message}`);
+          console.error('[DRS] Access denied:', errorData);
+          setSelectedBuilding(null);
+          return;
+        }
+
+        if (response.ok) {
+          const detailedBuilding = await response.json();
+          setSelectedBuilding(detailedBuilding);
+        }
+      } catch (err) {
+        console.error('Error fetching building details:', err);
+      }
+    }
   };
 
   const handleSearchResult = (building) => {
@@ -208,4 +251,6 @@ function App() {
   );
 }
 
+// Export both the component and the SDK instance for use in other components
 export default App;
+export { telemetrySDK };
