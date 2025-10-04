@@ -5,8 +5,15 @@ import AnalysisPanel from './components/AnalysisPanel';
 import ThemeToggle from './components/ThemeToggle';
 import MapLegend from './components/MapLegend';
 import LoadingSpinner from './components/LoadingSpinner';
+import TelemetrySDK from './telemetry/TelemetrySDK.v2';
 import { MapPin, Sun, Zap, Sparkles, Home } from 'lucide-react';
 import './App.css';
+
+// Create SDK instance (outside component, singleton)
+const telemetrySDK = new TelemetrySDK({
+  apiUrl: 'http://localhost:8080',
+  debug: true,
+});
 
 function App() {
   const [selectedBuilding, setSelectedBuilding] = useState(null);
@@ -44,6 +51,17 @@ function App() {
     };
 
     loadBuildings();
+  }, []);
+
+  // Initialize telemetry on any view
+  useEffect(() => {
+    // Initialize telemetry on any view
+    telemetrySDK.initialize();
+    
+    // Cleanup on unmount
+    return () => {
+      telemetrySDK.shutdown();
+    };
   }, []);
 
   const handleThemeToggle = () => {

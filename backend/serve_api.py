@@ -10,9 +10,13 @@ from pathlib import Path
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import pandas as pd
+from drs_middleware import DRSMiddleware, add_drs_headers
 
 app = Flask(__name__)
 CORS(app, origins=['http://localhost:3000'])
+
+# Add DRS middleware
+drs = DRSMiddleware(app, drs_url='http://localhost:8080')
 
 # Data directory
 DATA_DIR = Path(__file__).parent.parent / 'data'
@@ -54,6 +58,7 @@ def get_buildings():
     return jsonify(geojson_data)
 
 @app.route('/api/buildings/<building_id>', methods=['GET'])
+@drs.protect(action='building_details')  # Add DRS protection
 def get_building_details(building_id):
     """Get detailed information for a specific building"""
     geojson_data = load_geojson()
@@ -133,6 +138,11 @@ def create_monthly_production_data(annual_kwh):
         })
     
     return monthly_data
+
+@app.after_request
+def after_request(response):
+    add_drs_headers(response)
+    return response
 
 if __name__ == '__main__':
     print("🌞 Starting Project SolisCAN API Server...")

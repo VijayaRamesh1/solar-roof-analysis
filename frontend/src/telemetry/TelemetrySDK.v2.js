@@ -173,9 +173,9 @@ class TelemetrySDK {
       platform: navigator.platform,
       
       // Screen (technical)
-      screenWidth: screen.width,
-      screenHeight: screen.height,
-      screenColorDepth: screen.colorDepth,
+      screenWidth: window.screen.width,
+      screenHeight: window.screen.height,
+      screenColorDepth: window.screen.colorDepth,
       screenPixelRatio: window.devicePixelRatio || 1,
       
       // Timezone (coarse location hint)
@@ -207,9 +207,9 @@ class TelemetrySDK {
     const components = [
       navigator.userAgent,
       navigator.language,
-      screen.width,
-      screen.height,
-      screen.colorDepth,
+      window.screen.width,
+      window.screen.height,
+      window.screen.colorDepth,
       new Date().getTimezoneOffset(),
       navigator.platform,
       navigator.hardwareConcurrency || '',
