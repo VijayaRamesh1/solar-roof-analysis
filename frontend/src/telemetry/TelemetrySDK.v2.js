@@ -413,15 +413,29 @@ class TelemetrySDK {
       return;
     }
 
-    // Add timestamp
+    // Map unsupported event types to DRS-compatible ones
+    let mappedEvent = event;
+    
+    // Map visibility events to focus/blur
+    if (event.type === 'visibility_visible') {
+      mappedEvent = { ...event, type: 'focus', data: {} };
+    } else if (event.type === 'visibility_hidden') {
+      mappedEvent = { ...event, type: 'blur', data: {} };
+    } else if (event.type === 'integrity') {
+      // Skip integrity events for now - DRS doesn't support them
+      this.log('Skipping integrity event (not supported by DRS)');
+      return;
+    }
+
+    // Add timestamp (NO seq field - DRS doesn't support it)
     const enrichedEvent = {
-      ...event,
+      type: mappedEvent.type,
       timestamp: Date.now(),
-      seq: this.eventCount++,
+      data: mappedEvent.data || {},
     };
 
     this.eventQueue.push(enrichedEvent);
-    this.log(`Event queued: ${event.type} (${this.eventQueue.length}/${this.config.batchSize})`);
+    this.log(`Event queued: ${enrichedEvent.type} (${this.eventQueue.length}/${this.config.batchSize})`);
 
     // Auto-flush on batch size
     if (this.eventQueue.length >= this.config.batchSize) {
